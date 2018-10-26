@@ -11,7 +11,7 @@
 #define TRUE 1
 #define FALSE 0
 
-#define MAXSIZE 20 /* 存储空间初始分配量 */
+#define MAXSIZE 20 /* 存储空间初始分配量 ,没用到，可以正常编译*/
 
 typedef int Status;/* Status是函数的类型,其值是函数结果状态代码，如OK等 */
 typedef int ElemType;/* ElemType类型根据实际情况而定，这里假设为int */
@@ -26,10 +26,8 @@ typedef struct Node
 {
     ElemType data;
     struct Node *next;
-    void (*size)();
-
-}Node,*Linklist;
-//typedef struct Node *LinkList; /* 定义LinkList */
+}Node;
+typedef struct Node *LinkList; /* 定义LinkList */
 
 /* 初始化顺序线性表 */
 Status InitList(LinkList *L)
@@ -215,7 +213,6 @@ int main()
     LinkList L;  //L是个指针
     ElemType e;
     Status i;
-    size=ListLength;
     int j,k;
     i=InitList(&L);
     printf("初始化L后：ListLength(L)=%d\n",ListLength(L));
