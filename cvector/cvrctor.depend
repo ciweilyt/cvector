@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1540519224 source:/home/kay/LYT/vectorFile/数据结构链表修正/xiuzheng/cvector.c
+	"cvector.h"
+
+1540519224 /home/kay/LYT/vectorFile/数据结构链表修正/xiuzheng/cvector.h
+	"stdio.h"
+	"string.h"
+	"ctype.h"
+	"stdlib.h"
+	"math.h"
+	"time.h"
+
+1540519598 source:/home/kay/LYT/vectorFile/数据结构链表修正/xiuzheng/main.c
+	"cvector.h"
+	<stdio.h>
+
